@@ -8,7 +8,7 @@ RUN apt-get update -q && apt-get install -qy libx11-dev libxkbfile-dev libsecret
 
 WORKDIR /vscode
 
-RUN yarn install --ignore-scripts && \
+RUN yarn && \
     yarn compile
     
 FROM node:12-slim
