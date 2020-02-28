@@ -1,7 +1,7 @@
 FROM debian:stretch-slim
 
 RUN apt-get update -q && \
-    apt-get install -qy --no-install-recommends wget git make ghostscript gnuplot && \ 
+    apt-get install -qy --no-install-recommends wget git make ghostscript gnuplot-nox freeglut3  && \ 
     apt-get --purge remove -y .\*-doc$ && \
     apt-get clean -y && \
     apt-get autoremove && \
