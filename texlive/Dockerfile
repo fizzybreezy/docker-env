@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 RUN apt-get update -q && \
     apt-get install -qy --no-install-recommends wget git make ghostscript gnuplot-nox freeglut3  && \ 
